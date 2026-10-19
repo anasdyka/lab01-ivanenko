@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Порівняльна таблиця п'яти алгоритмів сортування за роком появи, обчислювальною складністю, стабільністю та застосуванням.">
+    <meta name="author" content="Іван Петренко">
+    <title>Порівняння алгоритмів сортування за складністю та роком</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top" class="page">
+
+    <header class="page__header">
+        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="pages/resources.html">Ресурси</a></li>
+                <li><a href="comparison.html" aria-current="page">Порівняння</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="application.html">Заявка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page__sidebar">
+        <h2>Розділи сайту</h2>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+        </ul>
+    </aside>
+
+    <main class="page__main">
+        <h1>Порівняння алгоритмів сортування</h1>
+
+        <div class="table-wrap">
+        <table>
+            <caption>Порівняння п'яти алгоритмів сортування</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Алгоритм</th>
+                    <th scope="col">Рік появи</th>
+                    <th scope="col">Складність у середньому</th>
+                    <th scope="col">Стабільність</th>
+                    <th scope="col">Застосування</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Бульбашкове</th>
+                    <td><time datetime="1956">1956</time></td>
+                    <td>O(n&sup2;)</td>
+                    <td>так</td>
+                    <td>навчальні приклади</td>
+                </tr>
+                <tr>
+                    <th scope="row">Сортування вставками</th>
+                    <td><time datetime="1946">1946</time></td>
+                    <td>O(n&sup2;)</td>
+                    <td>так</td>
+                    <td>малі та майже впорядковані масиви</td>
+                </tr>
+                <tr>
+                    <th scope="row">Швидке</th>
+                    <td><time datetime="1959">1959</time></td>
+                    <td>O(n log n)</td>
+                    <td>ні</td>
+                    <td>загального призначення</td>
+                </tr>
+                <tr>
+                    <th scope="row">Сортування злиттям</th>
+                    <td><time datetime="1945">1945</time></td>
+                    <td>O(n log n)</td>
+                    <td>так</td>
+                    <td>зовнішнє сортування великих файлів</td>
+                </tr>
+                <tr>
+                    <th scope="row">Пірамідальне</th>
+                    <td><time datetime="1964">1964</time></td>
+                    <td>O(n log n)</td>
+                    <td>ні</td>
+                    <td>сортування зі сталою пам'яттю</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Усього розглянуто 5 алгоритмів сортування</td>
+                </tr>
+            </tfoot>
+        </table>
+        </div>
+
+        <h2>Складність у найкращому та найгіршому випадках</h2>
+        <table>
+            <caption>Межі складності алгоритмів сортування</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Алгоритм</th>
+                    <th colspan="2" scope="colgroup">Складність</th>
+                </tr>
+                <tr>
+                    <th scope="col">Найкраща</th>
+                    <th scope="col">Найгірша</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Бульбашкове</th>
+                    <td>O(n)</td>
+                    <td>O(n&sup2;)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Швидке</th>
+                    <td>O(n log n)</td>
+                    <td>O(n&sup2;)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Сортування злиттям</th>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="page__footer">
+        <address>
+            Іван Петренко, група КН-21<br>
+            Електронна пошта:
+            <a href="mailto:petrenko@example.com">petrenko@example.com</a><br>
+            Телефон: <a href="tel:+380671234567">+38 (067) 123-45-67</a>
+        </address>
+        <p>&copy; 2026 Іван Петренко. Навчальна робота.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">Нагору</a>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Медіагалерея навчального сайту про алгоритми та структури даних: ілюстрації, векторна графіка, відео з субтитрами та карта розташування.">
+    <meta name="author" content="Іван Петренко">
+    <title>Галерея: ілюстрації, відео та карта до теми алгоритмів</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top" class="page">
+
+    <header class="page__header">
+        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="pages/resources.html">Ресурси</a></li>
+                <li><a href="comparison.html">Порівняння</a></li>
+                <li><a href="gallery.html" aria-current="page">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="application.html">Заявка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page__sidebar">
+        <h2>Розділи сайту</h2>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+        </ul>
+    </aside>
+
+    <main class="page__main">
+        <h1>Медіагалерея</h1>
+
+        <h2>Ілюстрації до теми</h2>
+
+        <div class="card-grid">
+
+        <figure class="card">
+            <picture>
+                <source srcset="img/photo-1.webp" type="image/webp">
+                <img src="img/photo-1.jpg" alt="Робоче місце з відкритим кодом на екрані монітора"
+                     width="1200" height="800">
+            </picture>
+            <figcaption>Автор: Іван Петренко, власне зображення-заглушка</figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="img/photo-2.jpg" alt="Дошка зі схемою алгоритму сортування"
+                 width="1200" height="800" loading="lazy">
+            <figcaption>Автор: Іван Петренко, власне зображення-заглушка</figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="img/photo-3.jpg" alt="Серверна шафа в дата-центрі"
+                 width="1200" height="800" loading="lazy">
+            <figcaption>Автор: Іван Петренко, власне зображення-заглушка</figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="img/photo-5.jpg" alt="Схема етапів роботи алгоритму сортування"
+                 width="1200" height="800" loading="lazy">
+            <figcaption>Схема показує чотири етапи: розбиття масиву, порівняння
+                пар елементів, обмін місцями, об'єднання результату. Докладний опис
+                кожного етапу наведено в тексті розділу «Основні поняття».</figcaption>
+        </figure>
+
+        <a class="card" href="pages/resources.html">
+            <img src="img/photo-6.jpg" alt="Перейти до розділу «Ресурси»"
+                 width="1200" height="800" loading="lazy">
+        </a>
+
+        </div>
+
+        <img src="img/photo-4.jpg" alt="" width="1200" height="120" loading="lazy">
+
+        <h2>Векторна графіка</h2>
+        <img src="img/icon.svg" alt="Піктограма коду" width="64" height="64">
+
+        <h2>Відео</h2>
+        <video controls width="640" preload="metadata">
+            <source src="video/demo.mp4" type="video/mp4">
+            <track src="video/demo-uk.vtt" kind="subtitles" srclang="uk"
+                   label="Українські субтитри" default>
+            Ваш браузер не підтримує відтворення відео.
+            <a href="video/demo.mp4">Завантажити файл</a>
+        </video>
+
+        <h2>Розташування</h2>
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=30.50%2C46.44%2C30.78%2C46.52&amp;layer=mapnik"
+                width="600" height="400"
+                title="Карта розташування закладу освіти"
+                loading="lazy"
+                sandbox="allow-scripts allow-same-origin"></iframe>
+    </main>
+
+    <footer class="page__footer">
+        <address>
+            Іван Петренко, група КН-21<br>
+            Електронна пошта:
+            <a href="mailto:petrenko@example.com">petrenko@example.com</a><br>
+            Телефон: <a href="tel:+380671234567">+38 (067) 123-45-67</a>
+        </address>
+        <p>&copy; 2026 Іван Петренко. Навчальна робота.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">Нагору</a>
+
+</body>
+</html>

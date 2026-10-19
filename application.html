@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Заявка на участь у навчальному проєкті з алгоритмів та структур даних: відомості про учасника, рівень підготовки та напрями інтересу.">
+    <meta name="author" content="Іван Петренко">
+    <title>Заявка на участь у навчальному проєкті</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top" class="page">
+
+    <header class="page__header">
+        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="pages/resources.html">Ресурси</a></li>
+                <li><a href="comparison.html">Порівняння</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="application.html" aria-current="page">Заявка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page__sidebar">
+        <h2>Розділи сайту</h2>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+        </ul>
+    </aside>
+
+    <main class="page__main">
+        <h1>Заявка на участь у проєкті</h1>
+
+        <div class="media">
+            <img src="img/icon.svg" alt="" class="media__icon" width="32" height="32">
+            <p class="media__body">Поля із синьою смугою зліва позначено атрибутом
+                <code>required</code> - вони обов'язкові для заповнення.</p>
+        </div>
+
+        <form action="https://httpbin.org/post" method="post">
+
+            <fieldset>
+                <legend>Відомості про учасника</legend>
+
+                <label for="fullname">Прізвище та ім'я</label>
+                <input type="text" id="fullname" name="fullname"
+                       minlength="5" maxlength="100" required
+                       autocomplete="name">
+                <br><br>
+
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" required
+                       autocomplete="email">
+                <br><br>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone"
+                       pattern="\+380[0-9]{9}"
+                       title="Формат: +380671234567" required
+                       autocomplete="tel">
+                <br><br>
+
+                <label for="course">Курс навчання</label>
+                <input type="number" id="course" name="course"
+                       min="1" max="4" step="1" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Рівень підготовки</legend>
+                <label><input type="radio" name="level" value="junior" checked> Початковий</label><br>
+                <label><input type="radio" name="level" value="middle"> Середній</label><br>
+                <label><input type="radio" name="level" value="senior"> Просунутий</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Параметри проєкту</legend>
+
+                <label for="startdate">Дата початку участі</label>
+                <input type="date" id="startdate" name="startdate"
+                       min="2026-09-15" required>
+                <br><br>
+
+                <label for="stack">Технологічний стек</label>
+                <select id="stack" name="stack" required>
+                    <optgroup label="Мови програмування">
+                        <option value="python">Python</option>
+                        <option value="cpp">C++</option>
+                    </optgroup>
+                    <optgroup label="Клієнтські технології">
+                        <option value="js">JavaScript</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <p>Напрями інтересу:</p>
+                <label><input type="checkbox" name="interests" value="sorting"> Сортування</label><br>
+                <label><input type="checkbox" name="interests" value="graphs"> Графи</label><br>
+                <label><input type="checkbox" name="interests" value="trees"> Дерева</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Додаткові дані</legend>
+
+                <label for="experience">Короткий опис досвіду</label><br>
+                <textarea id="experience" name="experience"
+                          minlength="20" maxlength="500"></textarea>
+                <br><br>
+
+                <label for="portfolio">Файл із портфоліо (необов'язково)</label>
+                <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx">
+            </fieldset>
+
+            <br>
+            <button type="submit" class="btn">Надіслати заявку</button>
+            <button type="reset">Очистити форму</button>
+            <button type="button" id="preview-btn">Попередній перегляд</button>
+        </form>
+    </main>
+
+    <footer class="page__footer">
+        <address>
+            Іван Петренко, група КН-21<br>
+            Електронна пошта:
+            <a href="mailto:petrenko@example.com">petrenko@example.com</a><br>
+            Телефон: <a href="tel:+380671234567">+38 (067) 123-45-67</a>
+        </address>
+        <p>&copy; 2026 Іван Петренко. Навчальна робота.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">Нагору</a>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Форма зворотного зв'язку навчального сайту про алгоритми та структури даних: запитання, пропозиції та повідомлення про помилки.">
+    <meta name="author" content="Іван Петренко">
+    <title>Контакти та форма зворотного зв'язку</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top" class="page">
+
+    <header class="page__header">
+        <a href="index.html" class="site-title">Алгоритми та структури даних</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="pages/resources.html">Ресурси</a></li>
+                <li><a href="comparison.html">Порівняння</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+                <li><a href="application.html">Заявка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page__sidebar">
+        <h2>Розділи сайту</h2>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+        </ul>
+    </aside>
+
+    <main class="page__main">
+        <h1>Зворотний зв'язок</h1>
+
+        <form action="https://httpbin.org/post" method="post">
+
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="subject">Тема звернення</label>
+            <select id="subject" name="subject">
+                <option value="question">Запитання</option>
+                <option value="suggestion">Пропозиція</option>
+                <option value="error">Повідомлення про помилку на сайті</option>
+            </select>
+            <br><br>
+
+            <label for="message">Текст повідомлення</label><br>
+            <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+            <br><br>
+
+            <label>
+                <input type="checkbox" name="consent" required>
+                Погоджуюсь на обробку персональних даних
+            </label>
+            <br><br>
+
+            <button type="submit" class="btn">Надіслати</button>
+        </form>
+    </main>
+
+    <footer class="page__footer">
+        <address>
+            Іван Петренко, група КН-21<br>
+            Електронна пошта:
+            <a href="mailto:petrenko@example.com">petrenko@example.com</a><br>
+            Телефон: <a href="tel:+380671234567">+38 (067) 123-45-67</a>
+        </address>
+        <p>&copy; 2026 Іван Петренко. Навчальна робота.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">Нагору</a>
+
+</body>
+</html>
